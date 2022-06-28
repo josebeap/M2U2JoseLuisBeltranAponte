@@ -23,7 +23,7 @@ validar.addEventListener("click", () => {
     isNaN(numeroD) ||
     numeroD < 0
   ) {
-    window.alert("Debe ingresar numeros positivos mayores o iguales a 0");
+    //window.alert("Debe ingresar numeros positivos mayores o iguales a 0");
     resultado.textContent =
       "Debe ingresar numeros positivos mayores o iguales a 0";
   } else {
@@ -65,17 +65,17 @@ validar.addEventListener("click", () => {
         numeroMenor = " Numero D "
       }
 
-      window.alert(
-        "El valor máximo es: " + mayor + numeroMayor + "El valor minimo es: " + menor + numeroMenor
-      );
+      //window.alert(
+        //"El valor máximo es: " + mayor + numeroMayor + "El valor minimo es: " + menor + numeroMenor
+      //);
       resultado.innerHTML =
         "El valor máximo es: " +
-        mayor +
+        mayor + numeroMayor +
         "<br>" +
         "El valor minimo es: " +
-        menor;
+        menor + numeroMenor;
     } else {
-        window.alert("Ninguno de los numeros debe ser iguales");
+        //window.alert("Ninguno de los numeros debe ser iguales");
       resultado.textContent = "Ninguno de los numeros debe ser iguales";
     }
   }

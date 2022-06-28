@@ -45,12 +45,13 @@
   <body>
     <div class="container">
       <h1>Ejercicio Uno</h1>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="nombre" />
+        <label for="floatingInput">Nombre Completo</label>
+        <br />
+      </div>
       <form id="formMateria">
-        <div class="form-floating">
-          <input type="text" class="form-control" id="nombre" />
-          <label for="floatingInput">Nombre Completo</label>
-          <br />
-        </div>
+       
         <div class="form-floating">
           <input type="text" class="form-control" id="materia" />
           <label for="floatingPassword">Materia</label>
@@ -75,9 +76,15 @@
         Resultado
       </button>
       <br />
+
       <div>
-        <h2 id="resultado"></h2>
+        <h2 id="datos"></h2>
       </div>
+
+      <div>
+        <h2 id="solucion"></h2>
+      </div>
+      
     </div>
 
     <script src="index.js"></script>
